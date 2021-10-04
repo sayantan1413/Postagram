@@ -38,3 +38,27 @@
     align-items: center;
     justify-content: flex-end;
 }
+
+.post__commentBox {
+    display: flex;
+    
+}
+
+.post__input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    border-top: 1px solid lightgrey;
+}
+
+.post__button {
+    flex: 0;
+    color: #6082a3;
+    background-color: transparent;
+    border: none;
+    border-top: 1px solid lightgrey;
+}
+
+.post__comments {
+    padding: 20px;
+}
