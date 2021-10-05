@@ -26,11 +26,13 @@
   height: 35px;
 }
 
-.app__signup{
+.app__signup {
   display: flex;
   flex-direction: column;
 }
 
 .app__posts {
+  display: grid;
   padding: 20px;
+  place-items: center;
 }
