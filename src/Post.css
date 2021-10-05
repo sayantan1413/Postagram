@@ -1,64 +1,63 @@
 .post {
-    background-color: white;
-    max-width: 500px;
-    border: 1px solid lightgrey;
-    margin-bottom: 45px;
+  background-color: white;
+  max-width: 500px;
+  border: 1px solid lightgrey;
+  margin-bottom: 45px;
 }
 .post__image {
-    width: 100%;
-    object-fit: contain;
-    border-top: 1px solid lightgrey;
-    border-bottom: 1px solid lightgrey;
+  width: 100%;
+  object-fit: contain;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
 }
 
 .post__text {
-    font-weight: normal;
-    padding: 20px;
+  font-weight: normal;
+  padding: 20px;
 }
 
 .post__header {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
 }
 
 .post__avatar {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .post__detail {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .post__option {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .post__commentBox {
-    display: flex;
-    
+  display: flex;
 }
 
 .post__input {
-    flex: 1;
-    border: none;
-    padding: 10px;
-    border-top: 1px solid lightgrey;
+  flex: 1;
+  border: none;
+  padding: 10px;
+  border-top: 1px solid lightgrey;
 }
 
 .post__button {
-    flex: 0;
-    color: #6082a3;
-    background-color: transparent;
-    border: none;
-    border-top: 1px solid lightgrey;
+  flex: 0;
+  color: #6082a3;
+  background-color: transparent;
+  border: none;
+  border-top: 1px solid lightgrey;
 }
 
 .post__comments {
-    padding: 20px;
+  padding: 20px;
 }
