@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Avatar from '@mui/material/Avatar';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
-import Button from '@mui/material/Button';
 import firebase from 'firebase/app'
 import './Post.css';
 import { db } from './firebase';
@@ -50,7 +49,7 @@ function Post({ username, caption, imageUrl, postId, user }) {
             <MoreHorizIcon className="post__morehorizicon"/>
         </div>
         </div>
-            <img className="post__image" src={imageUrl}/>
+            <img className="post__image" src={imageUrl} alt="img"/>
             <h4 className="post__text"><strong>{username}</strong> : {caption}</h4>
             <div className="post__comments">
                 {comments.map((comment) => {

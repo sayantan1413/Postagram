@@ -6,6 +6,11 @@ import Modal from '@mui/material/Modal';
 import Button from '@mui/material/Button';
 import Input from '@mui/material/Input';
 import { makeStyles } from '@material-ui/core/styles';
+import {  TextField, IconButton } from '@material-ui/core';
+// import { SearchOutlined } from '@material-ui/icons';
+// import InputAdornment from "@material-ui/core/InputAdornment";
+// import IconButton from '@material-ui/core/IconButton';
+import SearchIcon from '@mui/icons-material/Search';
 import ImageUpload from './ImageUpload';
 import InstagramEmbed from 'react-instagram-embed';
 
@@ -88,7 +93,6 @@ function App() {
 
   return (
     <div className="app">
-    
     <Modal 
       open={open}
       onClose={() => setOpen(false)}
@@ -160,6 +164,26 @@ function App() {
           src="https://www.instagram.com/static/images/web/mobile_nav_type_logo-2x.png/1b47f9d0e595.png"
           alt="Instagram Logo"
         />
+      
+        <div className="search-form" >
+        <TextField style={{borderRadius: "4px",
+                       width: "30em",
+                       borderColor: "#5b545436"
+                    }}
+                id="standard-bare"
+                variant="outlined"
+                placeholder="Search"
+      
+               InputProps={{ 
+                  endAdornment: (
+                    <IconButton>
+                      <SearchIcon />
+                    </IconButton>
+                  ),
+                }}
+             
+             />
+      </div>
         { user ?(
         <Button onClick={() => auth.signOut()}>Logout</Button>
       ): (
@@ -170,8 +194,7 @@ function App() {
         
       )}
       </div>
-      
-      
+
       <div className="app__posts">
       {
         posts.map(({id, post}) => (
