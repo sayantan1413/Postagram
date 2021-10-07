@@ -163,7 +163,7 @@ function App() {
         />
    <div className="search-form" >
      <TextField style={{borderRadius: "4px",
-                width: "30em",
+                width: "32em",
                 borderColor: "#5b545436" }}
                 id="standard-bare"
                 variant="outlined"
