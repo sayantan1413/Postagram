@@ -61,3 +61,16 @@
 .post__comments {
   padding: 20px;
 }
+.post__like {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 10px 0 10px;
+}
+.post__likeicon {
+  margin: 10px 10px 0 10px;
+  transition: color .2s ease-in-out !important;
+}
+.post__likeicon:hover {
+  color: grey;
+}
