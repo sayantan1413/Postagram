@@ -57,7 +57,7 @@ function Post({ username, caption, imageUrl, postId, user }) {
             <img className="post__image" src={imageUrl} />
             <div className="post__like">
                 <LikeButtons />
-                
+             
             </div>
             <h4 className="post__text"><strong>{username}</strong> : {caption}</h4>
             <div className="post__comments">

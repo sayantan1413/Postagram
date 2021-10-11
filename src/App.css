@@ -12,20 +12,33 @@
   position: sticky;
   top: 0;
   background-color: white;
-  padding: 20px;
   border-bottom: 1px solid lightgrey;
   object-fit: contain;
   display: flex;
   justify-content: space-between;
   z-index: 1;
 }
-
+.app__input{
+  padding: 20px;
+}
 .app__headerImage {
   object-fit: contain;
-  width: 100px;
-  height: 35px;
+  height: 100px;
+  margin-left: 20px;
 }
-
+.MuiInputBase-root {
+  height: 42px;
+}
+.MuiOutlinedInput-root {
+  position: relative;
+  border-radius: 4px;
+  width: 31.5em;
+}
+.search-form {
+  display: flex;
+  justify-content: center;
+  width: 34%;
+}
 .app__signup {
   display: flex;
   flex-direction: column;
