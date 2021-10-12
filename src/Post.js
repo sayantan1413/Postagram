@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import Avatar from '@mui/material/Avatar';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
+import LikeButtons from './LikeButtons';
+import Button from '@mui/material/Button';
 import firebase from 'firebase/app'
 import './Post.css';
 import { db } from './firebase';
+
 function Post({ username, caption, imageUrl, postId, user }) {
     const [comments, setComments] = useState([]);
     const [comment, setComment] = useState('');
+   
     useEffect(() => {
         let unsubscribe;
         if(postId) {
@@ -33,6 +37,7 @@ function Post({ username, caption, imageUrl, postId, user }) {
         });
         setComment('');
     }
+
     
     return (
         <div className="post">
@@ -49,13 +54,17 @@ function Post({ username, caption, imageUrl, postId, user }) {
             <MoreHorizIcon className="post__morehorizicon"/>
         </div>
         </div>
-            <img className="post__image" src={imageUrl} alt="img"/>
+            <img className="post__image" src={imageUrl} />
+            <div className="post__like">
+                <LikeButtons />
+             
+            </div>
             <h4 className="post__text"><strong>{username}</strong> : {caption}</h4>
             <div className="post__comments">
                 {comments.map((comment) => {
                     return (
                         <p>
-                            <strong>{comment.username}</strong> {comment.text}
+                            <strong>{comment.username}</strong>: {comment.text}
                         </p>
                     );
                 })
